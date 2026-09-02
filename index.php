@@ -25,7 +25,51 @@
         echo $i;
     }
 
+    echo "<br>";
+
+    $belanja = 80000;
+
+    if ($belanja > 100000) {
+        $belanja = $belanja - ($belanja * 0.10);
+    } else {
+
+    }
+
+    echo "Total belanjamu adalah " . $belanja;
+
+    echo "<br>";
+
+    $user = "admin";
+    $pass = "alamak";
+
+    $iuser = "admin";
+    $ipass = "alamak";
+
+    if ($iuser == $user && $ipass == $pass) {
+        echo "Akses diberikan!";
+    } else {
+        echo "Akses ditolak!";
+    }
+
+    echo "<br>";
+
+    $mhs = ['vano', 'april', 'rio'];
+    $datamhs = ["nama"=>"April","umur"=>20,"kelas"=>"A","prodi"=>"BD"];
+
+    echo "saya ". $datamhs["nama"] . ", umur saya " . $datamhs["umur"] . " tahun, saya prodi " . $datamhs["prodi"] . " kelas " . $datamhs["kelas"];
+
+    echo "<br>";
+
+    function perkalian($angka1, $angka2) {
+        return $angka1 * $angka2;
+    }
+
+    $hasil = perkalian(20,10);
+    
+    echo $hasil;
     ?>
+
+    
 
     
 
